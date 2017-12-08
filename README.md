@@ -8,12 +8,9 @@ My goal is to change to a carousel for mobile layouts.  I'll be using the [ngx-c
 
 ## Goals
 
-The table below outlines the goals of this project from a development standpoint
-
-* More practice with routing in Angular
 * Get more experience using the [Angular Material](https://material.angular.io/) framework
 * Use [Firestore](https://firebase.google.com/docs/firestore/) as a backend for displaying content
-* Practice with Http/APIs in Angular to get wikipedia content
+* using [Subjects](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/gettingstarted/subjects.md) for cross component communication
 
 ## Docs
 
