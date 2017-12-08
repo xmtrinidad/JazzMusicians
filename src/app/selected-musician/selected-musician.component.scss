@@ -1,0 +1,93 @@
+/** Musician Info **/
+.musician {
+    margin: 20px 0;
+}
+
+.musician__img-container {
+    text-align: center;
+}
+.musician__img {
+    max-width: 300px;
+}
+
+.musician__name {
+    padding: 0;
+    margin: 0;
+}
+
+.info {
+    text-align: center;
+}
+
+.musician__extract {
+    display: none;
+    margin-top: 12px;
+}
+
+.musician__years {
+    font-weight: 600;
+}
+
+/** Musician Records **/
+
+.record-cards {
+    display: grid;
+    justify-items: center;
+    grid-gap: 12px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.record-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 10px;
+    max-width: 360px;
+}
+
+.record-card__img {
+    width: 120px;
+}
+
+.record-card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .record-card__name {
+        margin: 0;
+        padding: 0;
+        .record-card__released {
+            font-weight: bold;
+        }
+    }
+}
+
+.rightRs, .leftRs {
+    display: none !important;
+}
+
+@media (min-width: 576px) {
+    
+}
+
+@media (min-width: 768px) {
+    .musician {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 20px;
+    }
+    .info {
+        text-align: left;
+        align-self: center;
+    }
+    .musician__extract {
+        display: block;
+    }
+    .musician__img {
+        max-width: 300px;
+    }
+
+    .record-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}

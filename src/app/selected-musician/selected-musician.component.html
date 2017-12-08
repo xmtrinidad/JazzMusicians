@@ -1,0 +1,48 @@
+<ngx-carousel
+class="container"
+*ngIf="selectedMusician"
+[inputs]="carouselOne"
+(carouselLoad)="myfunc($event)">
+  <ngx-item NgxCarouselItem>
+
+    <div class="musician">
+      <div class="musician__img-container">
+        <img class="musician__img" [src]="selectedMusician.img" alt="{{selectedMusician.name}} Image">
+      </div>
+      <div class="info">
+        <div>
+          <h2 class="musician__name">{{selectedMusician.name}}</h2>
+          <span class="musician__years">{{selectedMusician.dob}} - {{selectedMusician.death}}</span>
+        </div>
+        <div>
+          <p class="musician__extract">
+           {{selectedMusician.extract}} 
+          </p>
+          <a class="my-2" href="{{selectedMusician.wiki}}" mat-raised-button color="accent">Wikipedia</a>
+        </div>
+      </div>
+    </div>
+
+  </ngx-item>
+  <ngx-item NgxCarouselItem>
+    <h2 class="text-center">{{selectedMusician.name}} Discography</h2>
+    <div class="record-cards">
+      <div class="record-card" *ngFor="let record of records">
+        <div>
+          <img class="record-card__img" src="{{record.img}}" alt="{{record.name}} Record Cover">
+        </div>
+        <div class="record-card__info">
+          <div>
+            <h3 class="record-card__name">{{record.name}}</h3>
+            <span class="record-card__released">{{record.released}}</span>
+          </div>
+          <div>
+            <a href="{{record.link}}" class="record-card__listen" mat-raised-button color="accent">Listen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ngx-item>
+  <button NgxCarouselPrev class='leftRs'>&lt;</button>
+  <button NgxCarouselNext class='rightRs'>&gt;</button>
+</ngx-carousel>

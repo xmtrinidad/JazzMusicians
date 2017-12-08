@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import './_variables';
+@import "./material-theme";
+
+body, html {
+    height: 100%;
+}
+
+button:focus {
+    outline: none;
+}
+
+a {
+    color: inherit;
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+}

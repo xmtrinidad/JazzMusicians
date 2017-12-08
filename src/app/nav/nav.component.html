@@ -1,0 +1,8 @@
+<nav class="container">
+  <button class="menuBtn" mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <a (click)="onInstrumentSelect(navItem.name)" *ngFor="let navItem of navItems" mat-menu-item>{{navItem.name}}</a>
+  </mat-menu>  
+</nav>

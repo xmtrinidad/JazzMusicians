@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+@import './app/musicians/_musicians-theme.scss';
+@import './app/_footer-theme.scss';
+@include mat-core();
+
+$my-app-primary: mat-palette($mat-blue-grey);
+$my-app-accent:  mat-palette($mat-green, A200);
+$my-app-warn:    mat-palette($mat-red);
+
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+
+@include angular-material-theme($my-app-theme);
+@include musicians-theme($my-app-theme);
+@include footer-theme($my-app-theme);

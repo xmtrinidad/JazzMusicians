@@ -1,0 +1,8 @@
+@import '~@angular/material/theming';
+@mixin musicians-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  .musicians-component {
+    background-color: mat-color($accent);
+  }
+}

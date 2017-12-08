@@ -1,0 +1,15 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    h2 {
+        padding: 0;
+        margin: 0;
+    }
+}
