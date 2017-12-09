@@ -1,5 +1,8 @@
 # JazzMusicians
 
+Project Link:   
+https://xmtrinidad.github.io/JazzMusicians/
+
 ## Uplabs Mockup
 
 The mockup for this project can be found [here](https://www.uplabs.com/posts/impersionism).
